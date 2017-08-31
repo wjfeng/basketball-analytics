@@ -1,0 +1,5 @@
+library(ggplot2)
+#shots.data.raw<-read.csv('complete_data.csv',header=T)
+#sorted.data<-subset(shots.data.raw,select=c(7,13,14,19,23,25,26,28,29))
+#model<-glm(made~.,family=binomial(link='logit'),data=sorted.data)
+ggplot(shots.data.raw,aes(x=shot_x,y=shot_y))+geom_point(aes(colour=made))
